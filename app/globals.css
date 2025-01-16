@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-bg {
+  background: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/herobg-csqwnoe3-wTzPm1GT31krEJur6XF3qOF79oODdb.png') no-repeat center center;
+  background-size: cover;
+}
+
+.section-title {
+  @apply text-6xl font-extrabold mb-14 text-center;
+  background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+.section-spacing {
+  @apply my-16;
+}
+
+.section-separator {
+  @apply w-full h-px bg-gray-700 my-16;
+}
+
+.hero-line {
+  width: 4px;
+  background: linear-gradient(to bottom, transparent, #8a2be2, transparent);
+  box-shadow: 0 0 12px #8a2be2;
+  animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+.experience-line {
+  width: 3px;
+  background: linear-gradient(to bottom, transparent, #8a2be2, transparent);
+  box-shadow: 0 0 4px #8a2be2;
+}
+
