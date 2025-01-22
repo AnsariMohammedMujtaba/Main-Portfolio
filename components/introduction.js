@@ -1,19 +1,19 @@
 export default function Introduction() {
   const roles = [
     {
-      title: 'Web Developer',
-      icon: '🌐',
-      description: 'Creating responsive and intuitive user interfaces',
+      title: "Web Developer",
+      icon: "🌐",
+      description: "Creating responsive and intuitive user interfaces",
     },
     {
-      title: 'Cloud Data Engineer',
-      icon: '☁️',
-      description: 'Designing and implementing scalable data solutions',
+      title: "Cloud Data Engineer",
+      icon: "☁️",
+      description: "Designing and implementing scalable data solutions",
     },
     {
-      title: 'Backend Developer',
-      icon: '⚙️',
-      description: 'Building robust and efficient server-side applications',
+      title: "Backend Developer",
+      icon: "⚙️",
+      description: "Building robust and efficient server-side applications",
     },
   ]
 
@@ -22,7 +22,9 @@ export default function Introduction() {
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="section-title">Introduction</h2>
         <p className="text-gray-300 mb-12 max-w-3xl mx-auto text-xl leading-relaxed">
-          I'm Ansari Mohammed Mujtaba, a Computer Engineer with a B.E in Computer Science and 1.7 years of experience as an Azure Data Engineer. I specialize in cloud data solutions and have a passion for web design and development. By combining technical expertise and creativity, I create digital products that drive business success and enhance user experiences.
+          I'm Ansari Mohammed Mujtaba, a Computer Engineer with a B.E in Computer Science. I specialize in cloud data
+          solutions and have a passion for web design and development. By combining technical expertise and creativity,
+          I create digital products that drive business success and enhance user experiences.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {roles.map((role, index) => (
