@@ -3,30 +3,21 @@ import Link from "next/link"
 export default function Experience() {
   const experiences = [
     {
-      company: "Exposys Data Labs",
-      companyLink: "https://www.exposysdata.com/",
-      role: "Web Developer",
+      company: "Dreamcare Developers",
+      companyLink: "https://dreamcaredevelopers.com/",
+      role: "Azure Data Engineer",
       roleLink: "#",
-      period: "Sept 2021 - Oct 2021",
+      period: "July 2022 – Present",
       points: [
-        "Developed solutions using JavaScript and other web technologies",
-        "Implemented responsive design principles",
-        "Collaborated on UI/UX design and styling decisions",
-        "Implemented automated testing and validation",
-      ],
-      position: "left",
-    },
-    {
-      company: "Freelancing",
-      companyLink: "#",
-      role: "Full Stack Developer",
-      roleLink: "#",
-      period: "May 2023 - Jul 2024",
-      points: [
-        "Developed and maintained websites using JavaScript and other latest technologies",
-        "Implemented responsive design principles",
-        "Designed and built gaming sites and websites for different businesses",
-        "Provided ongoing maintenance and troubleshooting for security issues and user login",
+        "Built and maintained end-to-end data pipelines in Azure Data Factory (ADF) to automate the ingestion, transformation, and orchestration of large-scale data from diverse on-premise and cloud-based sources.",
+        "Worked as a member of development team to created Pipelines in ADF using Linked Services/Datasets/Pipeline/ to Extract, Transform and load data from different sources like SQL, ORACLE, SAP etc.",
+        "Enhanced ETL processes using Databricks and Spark (PySpark, DLT) to support scalable data analytics, achieving a 30% increase in data processing.",
+        "Developed Spark Application Using Pyspark and Spark SQL for data extraction, transformation and aggregation from multiple file format for analyzing & transforming data to uncover insight into the customer usage patterns.",
+        "Collaborated with teams to align business requirements with data engineering best practices, achieving a 95% client satisfaction rate.",
+        "Integrated Azure Key Vault for secure storage of secrets, connection strings, and API keys, ensuring compliance with organizational security standards.",
+        "Deployed code and pipelines via CI/CD pipelines and performed data curation and validation using Azure Databricks.",
+        "Created Generic pipeline for scheduling the required jobs on particular day, worked on daily tasks based on Technical and Business rules.",
+        "Achieved a 35% reduction in operational costs by implementing optimal job cluster configurations in Azure Databricks, enhancing efficiency and resource utilization."
       ],
       position: "left",
     },
@@ -74,4 +65,3 @@ export default function Experience() {
     </section>
   )
 }
-

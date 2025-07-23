@@ -19,8 +19,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <a href="/" className="text-white font-bold text-2xl flex items-center gap-2">
-              <span className="bg-purple-500 w-10 h-10 rounded-full flex items-center justify-center text-2xl">M</span>
+            <a href="/" className="text-white font-bold text-2xl">
               Mohammed Mujtaba
             </a>
           </div>
@@ -73,4 +72,3 @@ export default function Navbar() {
     </nav>
   )
 }
-

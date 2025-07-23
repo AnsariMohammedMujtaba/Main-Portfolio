@@ -15,27 +15,22 @@ export default function Projects() {
       tags: ['Java', 'MySQL', 'DatabaseManagement'],
     },
     {
-      title: 'Nobtex Composites - Client Website',
-      description: 'Developed and Managed Business Website using WordPress',
-      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nobtex.PNG-zr0j6qfP4GD0ytCfkvwwde73xM6dTc.png',
-      link: 'https://nobtexcomposites.in/',
-      tags: ['WordPress', 'Hostinger', 'GitHub'],
+      title: 'NYC Taxi Data Engineering Project',
+      description:
+        'Processed 1 year of raw NYC taxi data using Pandas and PySpark in Azure Databricks. Implemented incremental and dynamic loading through Azure Data Factory pipelines. Stored data efficiently in Delta Tables on Azure Data Lake Gen2.',
+      image: '', // Add image URL here
+      link: '',  // Add GitHub or live link here
+      tags: ['Azure Data Factory', 'Databricks', 'PySpark', 'Delta Lake', 'ETL'],
     },
     {
-      title: 'TD Mortgage Calculator',
-      description: 'Web-based platform that allows users to Calculate Mortgage.',
-      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cal.PNG-mJZPHe2RJRrx0NhwEvnF6DkbCi2Y4b.png',
-      link: 'https://ansarimohammedmujtaba.github.io/TdMortgage/',
-      tags: ['JavaScript', 'CSS', 'Bootstrap'],
+      title: 'Supply Chain Data Engineering Project',
+      description:
+        'Built a data pipeline using ADF to move data from SQL Server to ADLS as Delta Tables. Used Databricks for large-scale data processing and regional transformation workflows. Ensured quality with validation rules and checklists.',
+      image: '', // Add image URL here
+      link: '',  // Add GitHub or live link here
+      tags: ['Azure', 'ADF', 'Databricks', 'Delta Tables', 'SQL Server'],
     },
-    {
-      title: 'Car Game',
-      description: 'Web Based Car Game Using Html,CSS, Javascript',
-      image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cargame.PNG-jguv8pUtX1r0UqDMV6OCpyBzvWVsQH.png',
-      link: 'https://ansarimohammedmujtaba.github.io/Car-Game/',
-      tags: ['HTML', 'CSS', 'JavaScript'],
-    },
-  ]
+  ];
 
   return (
     <section className="section-spacing px-4 bg-gray-900/30" id="projects">
@@ -47,12 +42,16 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="rounded-lg overflow-hidden border border-gray-700 hover:border-purple-500 transition-colors flex flex-col bg-gray-800/20 hover:bg-gray-800/30">
-              <div className="relative h-48">
-                <img
-                  src={project.image || "/placeholder.svg"}
-                  alt={project.title}
-                  className="object-cover w-full h-full"
-                />
+              <div className="relative h-48 bg-gray-800">
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="object-cover w-full h-full"
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center text-gray-500 text-sm italic">Image Coming Soon</div>
+                )}
               </div>
               <div className="p-6 text-left flex-grow flex flex-col justify-between">
                 <div>
@@ -66,14 +65,18 @@ export default function Projects() {
                     ))}
                   </div>
                 </div>
-                <a
-                  href={project.link}
-                  className="inline-block text-purple-400 hover:text-purple-300 transition-colors text-sm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  See Project →
-                </a>
+                {project.link ? (
+                  <a
+                    href={project.link}
+                    className="inline-block text-purple-400 hover:text-purple-300 transition-colors text-sm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    See Project →
+                  </a>
+                ) : (
+                  <span className="text-gray-500 italic text-sm">Link Coming Soon</span>
+                )}
               </div>
             </div>
           ))}
@@ -81,6 +84,5 @@ export default function Projects() {
       </div>
       <div className="section-separator" />
     </section>
-  )
+  );
 }
-
