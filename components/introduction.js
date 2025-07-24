@@ -23,7 +23,7 @@ export default function Introduction() {
         <h2 className="section-title">Introduction</h2>
         <p className="text-gray-300 mb-6 max-w-3xl mx-auto text-xl leading-relaxed">
           I'm Ansari Mohammed Mujtaba, a Computer Engineer with a B.E in Computer Science. I specialize in cloud data
-          solutions and have a passion for web design and development. With over <strong>3 years of experience as a Data Engineer</strong>,
+          solutions and have a passion for web design and development. With over <strong>2 years of experience as a Data Engineer</strong>,
           I combine technical expertise and creativity to create digital products that drive business success and enhance user experiences.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

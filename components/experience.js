@@ -7,7 +7,7 @@ export default function Experience() {
       companyLink: "https://dreamcaredevelopers.com/",
       role: "Azure Data Engineer",
       roleLink: "#",
-      period: "July 2022 – Present",
+      period: "July 2023 – Present", // updated duration
       points: [
         "Built and maintained end-to-end data pipelines in Azure Data Factory (ADF) to automate the ingestion, transformation, and orchestration of large-scale data from diverse on-premise and cloud-based sources.",
         "Worked as a member of development team to created Pipelines in ADF using Linked Services/Datasets/Pipeline/ to Extract, Transform and load data from different sources like SQL, ORACLE, SAP etc.",
